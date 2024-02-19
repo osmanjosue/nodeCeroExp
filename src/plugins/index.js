@@ -1,9 +1,12 @@
 //Llamado Archivo de barril
 
-const { getAge } = require( './get-age.plugin');
-const { getUUID } = require( './get-id.plugin');
+const { getAge } = require('./get-age.plugin');
+const { getUUID } = require('./get-id.plugin');
+const { http } = require('../plugins/http-client.plugin');
 
-module.exports= {
+
+module.exports = {
     getAge,
     getUUID,
+    http,
 }
