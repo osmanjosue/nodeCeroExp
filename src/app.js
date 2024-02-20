@@ -4,17 +4,21 @@
 // const {getUserById} = require( './js-foundation/03-callbacks');
 // const {getUserById} = require( './js-foundation/04-arrow');
 // require('./js-foundation/05-factory');
+const { buildLogger } = require('./plugins')
 
-
+const logger = buildLogger( 'app.js' );
+logger.log('Hola Mundo');
+logger.error('Esto es algo malo');
 
 // console.log(emailTemplate);
 
-const getPokemonById = require('./js-foundation/06-promises')
+/* const getPokemonById = require('./js-foundation/06-promises') */
 
-getPokemonById(1)
-.then(pokemon => console.log({pokemon}))
-// .catch((err) => console.log('por favor intente de nuevo'))
-.finally(()=>console.log('finally'))
+
+/* getPokemonById(1)
+    .then(pokemon => console.log({ pokemon }))
+    .catch((err) => console.log('por favor intente de nuevo'))
+    .finally(() => console.log('finally')) */
 
 
 
