@@ -1,8 +1,19 @@
+import { getAge } from '../plugins/get-age.plugin';
 // const { getAge, getUUID } = require('../plugins') //no es necesrio poner index, lo encuentra rapidamente
+interface BuildMakePersonOptions{
+    getUUID: ()=> string;
+    getAge: (birthdate: string)=> number;
+}
 
-const buildMakePerson = ({ getUUID, getAge }) => {
+interface PersonOptions {
+    name: string;
+    birthdate: string;
+}
+
+
+export const buildMakePerson = ({ getUUID, getAge }: BuildMakePersonOptions) => {
     
-    return ({name, birthdate}) => {
+    return ({name, birthdate}:PersonOptions) => {
         return {
             id: getUUID(),
             name: name,

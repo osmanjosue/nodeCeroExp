@@ -1,12 +1,14 @@
+import { getPokemonById } from './js-foundation/06-promises';
+import { buildLogger } from './plugins/logger.plugin'
 /* const {getAge, getUUID} = require('./plugins') */
 // const {emailTemplate} = require ('./js-foundation/01-template')
 // require ('./js-foundation/02-destructuring')
 // const {getUserById} = require( './js-foundation/03-callbacks');
 // const {getUserById} = require( './js-foundation/04-arrow');
 // require('./js-foundation/05-factory');
-const { buildLogger } = require('./plugins')
 
-const logger = buildLogger( 'app.js' );
+
+const logger = buildLogger('app.ts');
 logger.log('Hola Mundo');
 logger.error('Esto es algo malo');
 
