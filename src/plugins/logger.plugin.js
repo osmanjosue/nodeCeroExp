@@ -1,6 +1,7 @@
 const winston = require('winston');
 const {combine, timestamp, json} = winston.format;
 
+/* configuracion basica winston (default) */
 const logger = winston.createLogger({
     level: 'info',
     format: combine(
@@ -16,6 +17,8 @@ const logger = winston.createLogger({
         new winston.transports.File({ filename: 'combined.log' }),
     ],
 });
+
+/* configuracion basica winston (default) */
 
 logger.add(new winston.transports.Console({
     format: winston.format.simple(),
