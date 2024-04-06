@@ -1,5 +1,5 @@
-import { getPokemonById } from './js-foundation/06-promises';
-import { buildLogger } from './plugins/logger.plugin'
+/* import { getPokemonById } from './js-foundation/06-promises';
+import { buildLogger } from './plugins/logger.plugin' */
 /* const {getAge, getUUID} = require('./plugins') */
 // const {emailTemplate} = require ('./js-foundation/01-template')
 // require ('./js-foundation/02-destructuring')
@@ -8,9 +8,9 @@ import { buildLogger } from './plugins/logger.plugin'
 // require('./js-foundation/05-factory');
 
 
-const logger = buildLogger('app.ts');
+/* const logger = buildLogger('app.ts');
 logger.log('Hola Mundo');
-logger.error('Esto es algo malo');
+logger.error('Esto es algo malo'); */
 
 // console.log(emailTemplate);
 
